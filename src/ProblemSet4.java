@@ -30,7 +30,7 @@ public class ProblemSet4 {
 		ps.centered("myopia", "yop");
 		ps.upOrDown(42.5, 'r');
 		ps.countMe("Haps cars, sums. troths: mobs? supes! gers", 's');
-		ps.isNotEqual("this is not the way to do things");
+		ps.isNotEqual("this snot not is is IS iS Is NoT nOT nOt NOT");
 		ps.triplets("AAaBBBbCcCCCc");
 		ps.addMe("12avr13ge14sd10", false);
 	}
@@ -143,7 +143,6 @@ public class ProblemSet4 {
 					}
 				}
 			}
-			System.out.println(count);
 			return count;
 			}
 		else {
@@ -155,17 +154,16 @@ public class ProblemSet4 {
 	    int countIs = 0;
 	    int countNot = 0;
 	    if (str == null) {
-	        System.out.println("false");
 	        return false;
 	    }
 	    char[] sttr = str.toCharArray();
 	    for (int x = 0; x < str.length(); x++) {
-	        if ((sttr[x] == 'i' || sttr[x] == 'I') && sttr[x - 1] == ' ') {
+	        if ((sttr[x] == 'i' || sttr[x] == 'I')) {
 				    if (sttr[x + 1] == 's' || sttr[x + 1] == 'S') {
 				     countIs++;   
 				    }
 				}
-			if ((sttr[x] == 'n' || sttr[x] == 'N') && sttr[x - 1] == ' ') {
+			if ((sttr[x] == 'n' || sttr[x] == 'N')) {
 			    if (sttr[x + 1] == 'o' || sttr[x + 1] == 'O') {
 			        if (sttr[x + 2] == 't' || sttr[x + 2] == 'T') {
 			            countNot++;
@@ -174,10 +172,10 @@ public class ProblemSet4 {
 			}
 	    }
 	    if (countIs == countNot) {
-	        return true;
+	    	return true;
 	    }
 	    else {
-	        return false;
+	    	return false;
 	    }
 	}
 	
@@ -208,7 +206,6 @@ public class ProblemSet4 {
 	        int count = 0;
 	        for (int x = 0; x < str.length(); x++) {
 	            if (sttr[x] == ' ') {
-	                System.out.println(-1);
 	                return -1;
 	            }
 	        }
@@ -216,7 +213,6 @@ public class ProblemSet4 {
 	            for (int y = 0; y < str.length(); y++) {
 	                if (Character.isDigit(sttr[y]) == true) {
 	                    sum += sttr[y] - '0';
-	                    System.out.println(sum);
 	                }
 	            }
 	            return sum;
