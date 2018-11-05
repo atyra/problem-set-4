@@ -138,11 +138,12 @@ public class ProblemSet4 {
 				    count++;
 				}
 				else if (teext[x] == end && x != text.length() - 1) {
-					if (teext[x + 1] == ' ' || teext[x + 1] == ',' || teext[x + 1] == '.' || teext[x + 1] == '?' || teext[x + 1] == '"' || teext[x + 1] == '\'' || teext[x + 1] == '!' || teext[x + 1] == ':' || teext[x + 1] == ';' || teext[x + 1] == ')' || teext[x + 1] == '}' || teext[x + 1] == ']')   {
+					if (teext[x + 1] == ' ' || teext[x + 1] == '\n' || teext[x + 1] == '\t') {
 						count++;
 					}
 				}
 			}
+			System.out.println(count);
 			return count;
 			}
 		else {
